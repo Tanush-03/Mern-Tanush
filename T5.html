@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>TASK-5</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        table, tr, td {
+            border-collapse: collapse;
+            padding: 3px;
+            font-size: 20px;
+        }
+        .heading{
+            color:blue;
+        }
+        .inputwithoutradio {
+            width: 500px;
+        }
+        .radio-label {
+            display: flex;
+            align-items: center;
+        }
+        .radio {
+            margin-right: 10px;
+        }
+        .declare {
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        .form-container {
+            text-align: center;
+        }
+        .register-button {
+            margin-top: 20px;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Registration form</h1>
+    <div class="form-container">
+        <table border>
+            <tr>
+                <td><b>First Name</b></td>
+                <td><input class="inputwithoutradio" type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Last Name</b></td>
+                <td><input class="inputwithoutradio" type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Email</b></td>
+                <td><input class="inputwithoutradio"  type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Password</b></td>
+                <td><input  class="inputwithoutradio"  type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Re-enter Password</b></td>
+                <td><input class="inputwithoutradio"  type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Gender:</b></td>
+                <td>
+                    <div class="radio-label">
+                        <input class="radio" type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="radio-label">
+                        <input class="radio" type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="name"><b>Age:</b></td>
+                <td><input class="inputwithoutradio" type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Phone Number</b></td>
+                <td><input class="inputwithoutradio" type="text"></td></td>
+            </tr>
+            <tr>
+                <td class="name">
+                   <label for="address"><b>Address</b></label> 
+                </td>
+                <td>
+                    <textarea name="address" class="inputwithoutradio" type="text" cols="10" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="name"><b>State</b></td>
+                <td><input class="inputwithoutradio"  type="text"></td>
+            </tr>
+            <tr>
+                <td class="name"><b>Country</b></td>
+                <td align="left">
+                    <select name="country"  id="country">
+                        <option value="india">Choose your country</option>
+                        <option value="india">America</option>
+                        <option value="Australia">Australia</option>
+                        <option value="india">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="france">France</option>
+                        <option value="belgium">Belgium</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="brazil">Brazil</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="name"><b>Languages known</b></td>
+                <td align="left">
+                    <input type="checkbox" name="lang">
+                    <label for="lang">English</label>
+                    <input type="checkbox" name="lang">
+                    <label for="lang">Kannada</label>
+                    <input type="checkbox" name="lang">
+                    <label for="lang">Hindi</label>
+                    <input type="checkbox" name="lang">
+                    <label for="lang">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; border: none;">
+                    <input class="radio" type="checkbox">
+                    <p class="declare">
+                        Hereby I declare all the given details are true
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    <p class="declare">
+                        Log in to <a href="https://ethnus.com/">Ethnus</a>Website
+                    </p>
+                </td>
+            </tr>
+            
+        </table>
+        <div class="register-button">
+            <button>Register</button>
+        </div>
+    </div>
+</body>
+</html>
